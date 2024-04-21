@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myint Thin Zar San</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+    body,h1,h5 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background-image: url('https://i.pinimg.com/564x/eb/30/61/eb30610a5b332a59950b06596e1df7cb.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    </style>
+  </head>
+<body>
+
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+      <a href="Myint.pdf" target="_blank">
+      <img src="Myint.jpg" width="200" height="200" name="OrteliusWorldMap" 
+        onmouseover="OrteliusWorldMap.width='400';OrteliusWorldMap.height='400';" 
+        onmouseout="OrteliusWorldMap.width='200';OrteliusWorldMap.height='200';"/>
+      </a>
+      <a href="Anass-Resume.pdf" target="_blank"> 
+      <img src="Anass.jpg" width="200" height="200" name="OrteliusWorldMap2" 
+        onmouseover="OrteliusWorldMap2.width='400';OrteliusWorldMap2.height='400';" 
+        onmouseout="OrteliusWorldMap2.width='200';OrteliusWorldMap2.height='200';"/>
+      </a>
+  </div>
+  
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-indigo">Menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-indigo">Contact</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge" style="color:black">Since 5th August 2022</p>
+    <p class="w3-xlarge">&#128520  &#127793</p>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Memorial Things</h1>
+    </div>
+    <div class="w3-container">
+      <h5><a href="receiving-gift.html">Gifts from Him</a></h5>
+      <h5><a href="act-service.html">His Love Language</a></h5>
+    </div>
+  </div>
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Memorable Dates</h1>
+    </div>
+    <div class="w3-container">
+      <h5><a href="dates.html">Favorite Photos</a></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container" id = "p_p_id_39_INSTANCE_gUlP5HeyQaiq_">
+      <p>Send a special message to me ... &#128151;</p>
+      <input id="msg" type="text" placeholder="Type Message" size="50">
+      <button onclick="send_handle(); hide();">Send</button>
+      <p></p>
+    </div>
+  </div>
+</div>
+<script>
+function send_handle() {
+  const msg = document.getElementById("msg").value;
+  const win = window.open(`https://wa.me/447585586547?text=${msg}`, '_blank');
+  // win.focus();
+}
+function hide() {
+  document.getElementById("contact").style.display = "none";
+}
+</script>
+</body>
+</html>
+
